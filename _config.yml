@@ -1,0 +1,58 @@
+title: Erin Avllazagaj
+author: Erin Avllazagaj
+email: albocode<a>umd.edu
+description: > # this means to ignore newlines until "twitter_username:"
+
+
+# social links
+twitter_username: albocoder
+github_username: albocoder
+rss:
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jekyll
+# linkedin_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: albocoder
+# googleplus_username: +jekyll
+gscholar_id: NJexRuUAAAAJ
+
+address:  5112 B.Iribe Center
+address_xy: 38.989303758158144,-76.93645022861182
+
+# Mastodon instances
+# mastodon:
+# - username: jekyll
+#   instance: example.com
+# - username: jekyll2
+#   instance: example.com
+
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+disqus:
+  shortname: albocoder-github-io
+
+google_analytics: G-MLGRKHG0RE
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+# header_pages:
+#   about.md
+#   - portfolio.md
+#   myapp.md
+
+# Build settings
+theme: minima
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+
+header_pages:
