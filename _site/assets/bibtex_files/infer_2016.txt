@@ -1,0 +1,6 @@
+@article{avllazagaj2016privacy,
+  title={Privacy-Related Consequences of Turkish Citizen Database Leak},
+  author={Avllazagaj, Erin and Ayday, Erman and Cicek, A Ercument},
+  journal={International Workshop on Inference & Privacy in a Hyperconnected World (INFER)},
+  year={2016}
+}
