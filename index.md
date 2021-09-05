@@ -53,6 +53,18 @@ layout: home
 </td>
 </tr>
 
+
+<tr>
+<!-- <td></td> -->
+<td colspan=2>
+<h3><b>Talks</b></h3>
+<ul>
+    <li>When malware changed it's mind[...] [<a href="https://www.youtube.com/watch?v=ywfoGuM1TwA&t=4s&ab_channel=USENIX">link</a>] - <b>Usenix 2021</b></li>
+    <li>When malware changed it's mind[...] [<a href="https://vblocalhost.com/presentations/when-malware-changed-its-mind-an-empirical-study-of-variable-program-behaviours-in-the-real-world/">link</a>] - <b>vblocalhost 2021</b></li>
+</ul>
+</td>
+</tr>
+
 <tr>
 <!-- <td></td> -->
 <td colspan=2>
@@ -73,5 +85,6 @@ layout: home
 </ul>
 </td>
 </tr>
+
 
 </table>
