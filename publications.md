@@ -25,4 +25,6 @@ permalink: /publications/
 <ul>
     <li>[<a href="https://www.camlis.org/2019/posters/suciu/"><b>CAMLIS 2019</b></a>] The Secret Life of Pwns: Characterizing and Predicting Exploit Weaponization<br>
     <i>Octavian Suciu, <b>Erin Avllazagaj</b>, Tudor Dumitras</i></li>
+    <li>[<a href="https://43f60238-2232-4612-9aac-81bc9da2dd4e.filesusr.com/ugd/acbc49_637a351f1cae4222a59435b711ccf3f2.pdf"><b>CSAW 2021</b></a>] When Malware Changed Its Mind: An Empirical Study of Variable Program Behaviors in the Real World (<a href="/assets/pdf_files/csaw2021_ranking.pdf">first place</a>) [<a href="/assets/pdf_files/csaw2021_poster.pdf">pdf</a>]<br>
+    <i><b>Erin Avllazagaj</b>, Ziyun Zhu, Leyla Bilge, Davide Balzarotti, Tudor Dumitras</i></li>
 </ul>

@@ -47,6 +47,7 @@ layout: home
 <td colspan=2>
 <h3><b>News</b></h3>
 <ul>
+    <li><b>Nov 2021:</b> <a href="/assets/pdf_files/csaw2021_ranking.pdf">Our research</a> got the first place at CSAW 2021 applied research competition.</li>
     <li><b>Aug 2021:</b> <a href="https://vblocalhost.com/presentations/when-malware-changed-its-mind-an-empirical-study-of-variable-program-behaviours-in-the-real-world/">My talk</a> is accepted at vblocalhost 2021.</li>
     <li><b>Apr 2021:</b> <a href="https://www.usenix.org/conference/usenixsecurity21/presentation/avllazagaj">My paper</a> is accepted at USENIX Security 2021.</li>
 </ul>
@@ -70,6 +71,10 @@ layout: home
 <td colspan=2>
 <h3><b>Professional Services</b></h3>
 <ul>
+    <li><b>Reviewer</b></li>
+    <ul>
+        <li>Computer Science Review (<a href="https://www.journals.elsevier.com/computer-science-review">link</a>)</li>
+    </ul>
     <li><b>Artifact Evaluation Comitee</b></li>
     <ul>
         <li>USENIX Security Symposium (Usenix) 2021</li>
