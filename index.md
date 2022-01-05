@@ -47,6 +47,7 @@ layout: home
 <td colspan=2>
 <h3><b>News</b></h3>
 <ul>
+    <li><b>Jan 2022:</b> Our paper has appeared in multiple news outlets: <a href="https://www.csoonline.com/de/a/so-passt-sich-schadsoftware-an,3673681">CSO-DE</a>, <a href="https://thecyberwire.com/podcasts/research-saturday/207/notes">Cyberwire</a>, <a href="https://www.csoonline.com/article/3641208/malware-variability-explained-changing-behavior-computer-to-computer.html?utm_content=content&utm_campaign=organic&utm_medium=social&utm_source=twitter">CSO-EN</a></li>
     <li><b>Nov 2021:</b> <a href="/assets/pdf_files/csaw2021_ranking.pdf">Our research</a> got the first place at CSAW 2021 applied research competition.</li>
     <li><b>Aug 2021:</b> <a href="https://vblocalhost.com/presentations/when-malware-changed-its-mind-an-empirical-study-of-variable-program-behaviours-in-the-real-world/">My talk</a> is accepted at vblocalhost 2021.</li>
     <li><b>Apr 2021:</b> <a href="https://www.usenix.org/conference/usenixsecurity21/presentation/avllazagaj">My paper</a> is accepted at USENIX Security 2021.</li>

@@ -9,7 +9,9 @@ permalink: /publications/
 <ul>
     <li>[<a href="https://www.usenix.org/conference/usenixsecurity21"><b>USENIX Security 2021</b></a>] When Malware Changed Its Mind: An Empirical Study of Variable Program Behaviors in the Real World
      [<a href="/assets/pdf_files/malw_variability.pdf">pdf</a>] [<a href="/assets/bibtex_files/usenix_2021.txt">bib</a>]<br>
-    <i><b>Erin Avllazagaj</b>, Ziyun Zhu, Leyla Bilge, Davide Balzarotti, Tudor Dumitras</i></li>
+    <i><b>Erin Avllazagaj</b>, Ziyun Zhu, Leyla Bilge, Davide Balzarotti, Tudor Dumitras</i><br>
+    <i>Press highlights: <a href="https://www.csoonline.com/de/a/so-passt-sich-schadsoftware-an,3673681">CSO-DE</a>, <a href="https://thecyberwire.com/podcasts/research-saturday/207/notes">Cyberwire</a>, <a href="https://www.csoonline.com/article/3641208/malware-variability-explained-changing-behavior-computer-to-computer.html?utm_content=content&utm_campaign=organic&utm_medium=social&utm_source=twitter">CSO-EN</a></i><br>
+    </li>
 </ul>
 
 # Workshop papers
