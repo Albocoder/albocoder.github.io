@@ -1,4 +1,4 @@
-<figure class="image">
+<figure class="image" id="fig{{ include.figid }}">
     <a href="{{ include.url }}"><img src="{{ include.url }}" alt="{{ include.description }}"></a>
-    <figcaption style="text-align: center;"><small>{{ include.description }}</small></figcaption>
+    <figcaption style="text-align: center;"><small>Figure {{ include.figid }}: {{ include.description }}</small></figcaption>
 </figure>
