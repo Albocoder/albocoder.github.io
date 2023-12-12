@@ -28,7 +28,7 @@ layout: home
 <td><!-- <td style="font-family:Lucida Console; color: green; background-color: black;"> -->
 <h3><b>> ./research_interests</b></h3>
 <p >
-    My broad research interests cover data-driven <b>malware analysis</b> and <b>automatic exploit generation</b>. Specifically, in my recent PhD work I have analyzed executions of malware traces in the real world to derive guidelines for creating effective behavior based detection systems. I’m currently interested in automatic exploit generation for heap based exploits. My participation in various CTF competitions and my internship work have been major influences in this new research direction.
+    My broad research interests cover data-driven <b>malware analysis</b> and <b>automatic exploit generation</b>. Specifically, in my recent PhD work I have developed a tool (called SCAVY) to automatically find kernel objects that when overwritten by memory corruptions bugs can reach privilege escalation. My participation in various CTF competitions and my internship work have been major influences in this new research direction.
 </p>
 </td>
 </tr>
