@@ -64,7 +64,7 @@ layout: home
     </ul>
     <li><b>Artifact Evaluation Comitee</b></li>
     <ul>
-        <li>USENIX Security Symposium (Usenix) [<b>2021</b>, <b>2022</b>, <b>2023</b>]</li>
+        <li>USENIX Security Symposium (Usenix) [<b>2021</b>, <b>2022</b>, <b>2023</b>, <b>2024</b>]</li>
         <li>PETS Accepted papers (PoPETS) [<b>2021</b>, <b>2022</b>]</li>
     </ul>
     <li><b>External Reviewer</b></li>
@@ -72,7 +72,7 @@ layout: home
         <li>IEEE Security and Privacy (S &amp; P) [<b>2022</b>]</li>
         <li>ACM Conference on Computer and Communications Security (CCS) [<b>2018</b>, <b>2019</b>]</li>
         <li>Network and Distributed System Security Symposium (NDSS) [<b>2019</b>, <b>2020</b>]</li>
-        <li>USENIX Security Symposium (USENIX) [<b>2018</b>, <b>2019</b>]</li>
+        <li>USENIX Security Symposium (USENIX) [<b>2018</b>, <b>2019</b>, <b>2024</b>]</li>
         <li>International Symposium on Research in Attacks, Intrusions and Defenses (RAID) [<b>2018</b>, <b>2019</b>]</li>
         <li>ACM Conference on Computer and Communications Security (CCS) [<b>2018</b>, <b>2019</b>]</li>
     </ul>
