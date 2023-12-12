@@ -1,0 +1,428 @@
+include <linux/kvm.h>
+include <linux/kvm_para.h>
+include <linux/kvm_types.h>
+include <uapi/linux/kvm.h>
+
+
+
+resource fd_kvm[fd]
+resource fd_kvm_vm[fd]
+resource fd_kvm_vcpu[fd]
+resource fd_kvm_device[fd]
+
+
+
+kvm_msr_list {
+    nmsrs int32
+    indices array[int32]
+}
+
+kvm_cpuid2 {
+    nent int32
+    padding int32
+    entries array[kvm_cpuid_entry2]
+}
+
+kvm_x86_mce {
+    status int64
+    addr int64
+    misc int64
+    mcg_status int64
+    bank int32
+    pad int32
+}
+
+
+kvm_dirty_log {
+    slot int32
+    padding int32
+    dirty_bitmap ptr[out, array[int8]]
+}
+
+
+kvm_irq_level {
+    irq int32
+    level int32
+}
+
+
+kvm_irqchip {
+    chip_id int32
+    pad int32
+    pic_state array[kvm_pic_state, 2]
+}
+
+kvm_xen_hvm_config {
+    flags int32
+    msr int32
+    blob_addr_32 int32
+    blob_size_32 int32
+    blob_addr_64 int64
+    blob_size_64 int64
+    padding array[int32, 8]
+}
+
+
+kvm_clock_data {
+    clock int64
+    flags int32
+    pad int32
+}
+
+
+
+kvm_userspace_memory_region {
+    slot int32
+    flags int32
+    guest_phys_addr int64
+    memory_size int64
+    userspace_addr ptr[inout, vma]
+}
+
+
+kvm_ppc_pvinfo {
+    flags int32
+    hcall int32
+    sdr1 int32
+    htabsize int32
+}
+
+kvm_assigned_pci_dev {
+    assigned_dev_id int32
+    busnr int32
+    devfn int32
+    flags int32
+    segnr int32
+    reserved array[int32, 11]
+}
+
+kvm_assigned_irq {
+    assigned_dev_id int32
+    host_irq int32
+    guest_irq int32
+    flags int32
+    reserved array[int32, 12]
+}
+
+kvm_irq_routing {
+    nr int32
+    flags int32
+    entries array[kvm_irq_routing_entry]
+}
+
+kvm_assigned_msix_nr {
+    assigned_dev_id int32
+    entry_nr int32
+    padding int32
+}
+
+kvm_assigned_msix_entry {
+    assigned_dev_id int32
+    gsi int32
+    entry int32
+    padding int32
+}
+
+kvm_ioeventfd {
+    datamatch int64
+    addr int64
+    len int32
+    flags int32
+    fd int32
+    padding int32
+}
+
+kvm_msi {
+    address_lo int32
+    address_hi int32
+    data int32
+    flags int32
+    devid int32
+    pad int32
+}
+
+kvm_pit_config {
+    flags int32
+    pad int32
+}
+
+kvm_pit_state {
+    channels array[kvm_pit_channel_state, 3]
+    flags int32
+}
+
+kvm_pit_state2 {
+    channels array[kvm_pit_channel_state, 3]
+    flags int32
+}
+
+kvm_cpuid_entry2 {
+    function int32
+    index int32
+    flags int32
+    eax int32
+    ebx int32
+    ecx int32
+    edx int32
+    padding int32
+    data array[int32, 0:255]
+} [align[16]]
+
+kvm_pic_state {
+    last_irr int8
+    irr int8
+    imr int8
+    isr int8
+    priority_add int8
+    irq_base int8
+    read_reg_select int8
+    poll int8
+    special_mask int8
+    init_state int8
+    auto_eoi int8
+    rotate_on_auto_eoi int8
+    special_fully_nested_mode int8
+    init4 int8
+    elcr int8
+    elcr_mask int8
+}
+
+kvm_irq_routing_entry {
+    gsi int32
+    type int32
+    flags int32
+    pad int32
+    msi kvm_irq_routing_msi
+}
+
+kvm_pit_channel_state {
+    count int32
+    latched_count int16
+    count_latched int8
+    status_latched int8
+    status int8
+    read_state int8
+    write_state int8
+    write_latch int8
+    rw_mode int8
+    mode int8
+    bcd int8
+    gate int8
+    count_load_time int64
+}
+
+kvm_irqfd {
+    fd int32
+    gsi int32
+    flags int32
+    resamplefd int32
+}
+
+kvm_create_device {
+    type int32
+    fd int32
+    flags int32
+}
+
+kvm_coalesced_mmio_zone {
+    addr int64
+    size int32
+    pad int32
+}
+
+kvm_irq_routing_msi {
+    address_lo int32
+    address_hi int32
+    data int32
+    pad int32
+    devid int32
+}
+
+kvm_ppc_smmu_info {
+    flags int32
+    slb_size int32
+    page_shift int32
+    segment_shift int32
+    slb_encoding array[int32, 64]
+}
+
+kvm_hyperv_eventfd {
+    conn_id int32
+    flags int32
+    fd int32
+    padding int32
+}
+
+kvm_enable_cap {
+    cap int32
+    flags int32
+    args array[int64, 4]
+}
+
+kvm_reinject_control {
+    pit_reinject int8
+    padding array[int8, 7]
+}
+
+kvm_check_extension {
+    extension int32
+}
+
+
+type ulong int64[0:8446744073709551615]
+type vcpu_id int32[0:255]
+type htab_order ptr[inout, int32]
+
+openat$kvm(fd const[AT_FDCWD], file ptr[in, string["/dev/kvm"]], flags flags[open_flags], mode const[0]) fd_kvm
+openat$sgx_provision(fd const[AT_FDCWD], file ptr[in, string["/dev/sgx/provision"]], flags flags[open_flags], mode const[0]) fd_kvm
+
+ioctl$KVM_CREATE_VM(fd fd_kvm, cmd const[KVM_CREATE_VM], arg const[0]) fd_kvm_vm
+ioctl$KVM_GET_MSR_INDEX_LIST(fd fd_kvm, cmd const[KVM_GET_MSR_INDEX_LIST], arg ptr[out, kvm_msr_list])
+ioctl$KVM_GET_VCPU_MMAP_SIZE(fd fd_kvm, cmd const[KVM_GET_VCPU_MMAP_SIZE], arg const[0])
+ioctl$KVM_GET_SUPPORTED_CPUID(fd fd_kvm, cmd const[KVM_GET_SUPPORTED_CPUID], arg ptr[inout, kvm_cpuid2])
+ioctl$KVM_GET_EMULATED_CPUID(fd fd_kvm, cmd const[KVM_GET_EMULATED_CPUID], arg ptr[inout, kvm_cpuid2])
+ioctl$KVM_X86_GET_MCE_CAP_SUPPORTED(fd fd_kvm, cmd const[KVM_X86_GET_MCE_CAP_SUPPORTED], arg ptr[out, kvm_x86_mce])
+ioctl$KVM_GET_API_VERSION(fd fd_kvm, cmd const[KVM_GET_API_VERSION], arg const[0])
+
+ioctl$KVM_CREATE_VCPU(fd fd_kvm_vm, cmd const[KVM_CREATE_VCPU], arg ptr[inout, vcpu_id]) fd_kvm_vcpu
+ioctl$KVM_GET_DIRTY_LOG(fd fd_kvm_vm, cmd const[KVM_GET_DIRTY_LOG], arg ptr[in, kvm_dirty_log])
+ioctl$KVM_CREATE_IRQCHIP(fd fd_kvm_vm, cmd const[KVM_CREATE_IRQCHIP], arg const[0])
+ioctl$KVM_IRQ_LINE(fd fd_kvm_vm, cmd const[KVM_IRQ_LINE], arg ptr[in, kvm_irq_level])
+ioctl$KVM_IRQ_LINE_STATUS(fd fd_kvm_vm, cmd const[KVM_IRQ_LINE_STATUS], arg ptr[inout, kvm_irq_level])
+ioctl$KVM_GET_IRQCHIP(fd fd_kvm_vm, cmd const[KVM_GET_IRQCHIP], arg ptr[inout, kvm_irqchip])
+ioctl$KVM_SET_IRQCHIP(fd fd_kvm_vm, cmd const[KVM_SET_IRQCHIP], arg ptr[in, kvm_irqchip])
+ioctl$KVM_XEN_HVM_CONFIG(fd fd_kvm_vm, cmd const[KVM_XEN_HVM_CONFIG], arg ptr[in, kvm_xen_hvm_config])
+ioctl$KVM_GET_CLOCK(fd fd_kvm_vm, cmd const[KVM_GET_CLOCK], arg ptr[out, kvm_clock_data])
+ioctl$KVM_SET_CLOCK(fd fd_kvm_vm, cmd const[KVM_SET_CLOCK], arg ptr[in, kvm_clock_data])
+ioctl$KVM_SET_USER_MEMORY_REGION(fd fd_kvm_vm, cmd const[KVM_SET_USER_MEMORY_REGION], arg ptr[in, kvm_userspace_memory_region])
+ioctl$KVM_SET_TSS_ADDR(fd fd_kvm_vm, cmd const[KVM_SET_TSS_ADDR], arg ptr[inout, ulong])
+ioctl$KVM_SET_IDENTITY_MAP_ADDR(fd fd_kvm_vm, cmd const[KVM_SET_IDENTITY_MAP_ADDR], arg ptr[inout, ulong])
+ioctl$KVM_SET_BOOT_CPU_ID(fd fd_kvm_vm, cmd const[KVM_SET_BOOT_CPU_ID], arg ptr[inout, vcpu_id])
+ioctl$KVM_PPC_GET_PVINFO(fd fd_kvm_vm, cmd const[KVM_PPC_GET_PVINFO], arg ptr[out, kvm_ppc_pvinfo])
+ioctl$KVM_ASSIGN_PCI_DEVICE(fd fd_kvm_vm, cmd const[KVM_ASSIGN_PCI_DEVICE], arg ptr[in, kvm_assigned_pci_dev])
+ioctl$KVM_DEASSIGN_PCI_DEVICE(fd fd_kvm_vm, cmd const[KVM_DEASSIGN_PCI_DEVICE], arg ptr[in, kvm_assigned_pci_dev])
+ioctl$KVM_ASSIGN_DEV_IRQ(fd fd_kvm_vm, cmd const[KVM_ASSIGN_DEV_IRQ], arg ptr[in, kvm_assigned_irq])
+ioctl$KVM_DEASSIGN_DEV_IRQ(fd fd_kvm_vm, cmd const[KVM_DEASSIGN_DEV_IRQ], arg ptr[in, kvm_assigned_irq])
+ioctl$KVM_SET_GSI_ROUTING(fd fd_kvm_vm, cmd const[KVM_SET_GSI_ROUTING], arg ptr[in, kvm_irq_routing])
+ioctl$KVM_ASSIGN_SET_MSIX_NR(fd fd_kvm_vm, cmd const[KVM_ASSIGN_SET_MSIX_NR], arg ptr[in, kvm_assigned_msix_nr])
+ioctl$KVM_ASSIGN_SET_MSIX_ENTRY(fd fd_kvm_vm, cmd const[KVM_ASSIGN_SET_MSIX_ENTRY], arg ptr[in, kvm_assigned_msix_entry])
+ioctl$KVM_IOEVENTFD(fd fd_kvm_vm, cmd const[KVM_IOEVENTFD], arg ptr[in, kvm_ioeventfd])
+ioctl$KVM_ASSIGN_SET_INTX_MASK(fd fd_kvm_vm, cmd const[KVM_ASSIGN_SET_INTX_MASK], arg ptr[in, kvm_assigned_pci_dev])
+ioctl$KVM_SIGNAL_MSI(fd fd_kvm_vm, cmd const[KVM_SIGNAL_MSI], arg ptr[in, kvm_msi])
+ioctl$KVM_CREATE_PIT2(fd fd_kvm_vm, cmd const[KVM_CREATE_PIT2], arg ptr[in, kvm_pit_config])
+ioctl$KVM_GET_PIT(fd fd_kvm_vm, cmd const[KVM_GET_PIT], arg ptr[out, kvm_pit_state])
+ioctl$KVM_SET_PIT(fd fd_kvm_vm, cmd const[KVM_SET_PIT], arg ptr[in, kvm_pit_state])
+ioctl$KVM_GET_PIT2(fd fd_kvm_vm, cmd const[KVM_GET_PIT2], arg ptr[out, kvm_pit_state2])
+ioctl$KVM_SET_PIT2(fd fd_kvm_vm, cmd const[KVM_SET_PIT2], arg ptr[in, kvm_pit_state2])
+ioctl$KVM_PPC_GET_SMMU_INFO(fd fd_kvm_vm, cmd const[KVM_PPC_GET_SMMU_INFO], arg ptr[out, kvm_ppc_smmu_info])
+ioctl$KVM_IRQFD(fd fd_kvm_vm, cmd const[KVM_IRQFD], arg ptr[in, kvm_irqfd])
+ioctl$KVM_PPC_ALLOCATE_HTAB(fd fd_kvm_vm, cmd const[KVM_PPC_ALLOCATE_HTAB], arg htab_order)
+ioctl$KVM_CREATE_DEVICE(fd fd_kvm_vm, cmd const[KVM_CREATE_DEVICE], arg ptr[inout, kvm_create_device]) fd_kvm_device
+ioctl$KVM_REGISTER_COALESCED_MMIO(fd fd_kvm_vm, cmd const[KVM_REGISTER_COALESCED_MMIO], arg ptr[in, kvm_coalesced_mmio_zone])
+ioctl$KVM_UNREGISTER_COALESCED_MMIO(fd fd_kvm_vm, cmd const[KVM_UNREGISTER_COALESCED_MMIO], arg ptr[in, kvm_coalesced_mmio_zone])
+ioctl$KVM_SET_NR_MMU_PAGES(fd fd_kvm_vm, cmd const[KVM_SET_NR_MMU_PAGES], arg ptr[inout, ulong])
+ioctl$KVM_GET_NR_MMU_PAGES(fd fd_kvm_vm, cmd const[KVM_GET_NR_MMU_PAGES], arg const[0])
+ioctl$KVM_REINJECT_CONTROL(fd fd_kvm_vm, cmd const[KVM_REINJECT_CONTROL], arg ptr[inout, kvm_reinject_control])
+ioctl$KVM_HYPERV_EVENTFD(fd fd_kvm_vm, cmd const[KVM_HYPERV_EVENTFD], arg ptr[in, kvm_hyperv_eventfd])
+ioctl$KVM_CAP_MANUAL_DIRTY_LOG_PROTECT2(fd fd_kvm_vm, cmd const[KVM_CAP_MANUAL_DIRTY_LOG_PROTECT2], arg ptr[inout, kvm_enable_cap])
+ioctl$KVM_CAP_HALT_POLL(fd fd_kvm_vm, cmd const[KVM_CAP_HALT_POLL], arg ptr[inout, kvm_enable_cap])
+ioctl$KVM_CAP_DIRTY_LOG_RING(fd fd_kvm_vm, cmd const[KVM_CAP_DIRTY_LOG_RING], arg ptr[inout, kvm_reinject_control])
+ioctl$KVM_CHECK_EXTENSION(fd fd_kvm, cmd const[KVM_CHECK_EXTENSION], arg ptr[in, kvm_check_extension])
+
+kvm_device_attr {
+    group int32
+    attr int64
+    addr int64
+    flags int32
+    pad int32
+}
+
+kvm_msrs {
+    nmsrs int32
+    pad int32
+    entries array[kvm_msr_entry]
+}
+
+kvm_msr_entry {
+    index int32
+    reserved int32
+    data int64
+}
+
+kvm_sregs {
+    cs kvm_segment
+    ds kvm_segment
+    es kvm_segment
+    fs kvm_segment
+    gs kvm_segment
+    ss kvm_segment
+    tr kvm_segment
+    ldt kvm_segment
+    gdt kvm_dtable
+    idt kvm_dtable
+    cr0 int64
+    cr2 int64
+    cr3 int64
+    cr4 int64
+    cr8 int64
+    efer int64
+    apic_base int64
+    interrupt_bitmap array[int64, 4]
+}
+
+kvm_segment {
+    base int64
+    limit int32
+    selector int16
+    type int8
+    present int8
+    dpl int8
+    db int8
+    s int8
+    l int8
+    g int8
+    avl int8
+    unusable int8
+    padding int8
+}
+
+kvm_dtable {
+    base int64
+    limit int16
+    padding array[int16, 3]
+}
+
+kvm_regs {
+    rax int64
+    rbx int64
+    rcx int64
+    rdx int64
+    rsi int64
+    rdi int64
+    rsp int64
+    rbp int64
+    r8 int64
+    r9 int64
+    r10 int64
+    r11 int64
+    r12 int64
+    r13 int64
+    r14 int64
+    r15 int64
+    rip int64
+    rflags int64
+}
+
+
+
+ioctl$KVM_RUN(fd fd_kvm_vcpu, cmd const[KVM_RUN], arg const[0])
+ioctl$KVM_GET_REGS(fd fd_kvm_vcpu, cmd const[KVM_GET_REGS], arg ptr[out, kvm_regs])
+ioctl$KVM_SET_REGS(fd fd_kvm_vcpu, cmd const[KVM_SET_REGS], arg ptr[in, kvm_regs])
+ioctl$KVM_GET_SREGS(fd fd_kvm_vcpu, cmd const[KVM_GET_SREGS], arg ptr[out, kvm_sregs])
+ioctl$KVM_SET_SREGS(fd fd_kvm_vcpu, cmd const[KVM_SET_SREGS], arg ptr[in, kvm_sregs])
+ioctl$KVM_GET_MSRS(fd fd_kvm_vcpu, cmd const[KVM_GET_MSRS], arg ptr[inout, kvm_msrs])
+ioctl$KVM_SET_MSRS(fd fd_kvm_vcpu, cmd const[KVM_SET_MSRS], arg ptr[in, kvm_msrs])
+
+ioctl$KVM_SET_DEVICE_ATTR(fd fd_kvm_device, cmd const[KVM_SET_DEVICE_ATTR], arg ptr[in, kvm_device_attr])
+ioctl$KVM_GET_DEVICE_ATTR(fd fd_kvm_device, cmd const[KVM_GET_DEVICE_ATTR], arg ptr[inout, kvm_device_attr])
+ioctl$KVM_HAS_DEVICE_ATTR(fd fd_kvm_device, cmd const[KVM_HAS_DEVICE_ATTR], arg ptr[in, kvm_device_attr])
