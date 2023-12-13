@@ -20,7 +20,7 @@ One such risk being the biggest nightmare of every security practitioner -- AI l
 systems after they got bored taking L's in Fortnite.
 
 Security is not a solved problem and I don't see it being one in the near future (more code = more jobs).
-As security researchers, our job is therefore to increase the bar, such that an anversary with a low enough budget doesn't do anything.
+As security researchers, our job is therefore to increase the bar, such that an adversary with a low enough budget doesn't do anything.
 As I was making the case, at some point in the conversation I thought:
 *What if I can use a large language model (LLM) to help me with fuzzing a linux kernel module that I have no idea of*?
 
