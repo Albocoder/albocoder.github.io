@@ -28,7 +28,9 @@ layout: home
 <td><!-- <td style="font-family:Lucida Console; color: green; background-color: black;"> -->
 <h3><b>> ./research_interests</b></h3>
 <p >
-    My broad research interests cover data-driven <b>malware analysis</b> and <b>automatic exploit generation</b>. Specifically, in my recent PhD work I have developed a tool (called SCAVY) to automatically find kernel objects that when overwritten by memory corruptions bugs can reach privilege escalation. My participation in various CTF competitions and my internship work have been major influences in this new research direction.
+    My broad research interests cover data-driven <b>malware analysis</b> and <b>automatic exploit generation</b>. I'm currently more focused in automatic exploit generation for the Linux kernel.
+    Specifically, in my recent PhD work I have developed a tool (called SCAVY ) to automatically find kernel objects that when overwritten by memory corruptions bugs can reach privilege escalation.
+    My participation in various CTF competitions and my internship work at Meta have been major influences in this new research direction.
 </p>
 </td>
 </tr>
@@ -69,7 +71,7 @@ layout: home
     </ul>
     <li><b>External Reviewer</b></li>
     <ul>
-        <li>IEEE Security and Privacy (S &amp; P) [<b>2022</b>]</li>
+        <li>IEEE Security and Privacy (S &amp; P) [<b>2022</b>,<b>2023</b>]</li>
         <li>ACM Conference on Computer and Communications Security (CCS) [<b>2018</b>, <b>2019</b>]</li>
         <li>Network and Distributed System Security Symposium (NDSS) [<b>2019</b>, <b>2020</b>]</li>
         <li>USENIX Security Symposium (USENIX) [<b>2018</b>, <b>2019</b>, <b>2024</b>]</li>
