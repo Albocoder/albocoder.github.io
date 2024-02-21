@@ -15,7 +15,7 @@ layout: home
 <td><!-- <td style="font-family:Lucida Console; color: green; background-color: black;"> -->
 <h3><b>> whoami</b></h3>
 <p >
-    I am a Fifth Year Ph.D. student in the <a href="https://ece.umd.edu/">Department of Electrical and Computer Engineering</a> at the University of Maryland in College Park, advised by <a href="https://legacydirs.umiacs.umd.edu/~tdumitra/">Prof. Tudor Dumitraș</a>. I received my B.S. in Computer Science(CS) from <a href="w3.cs.bilkent.edu.tr/en/">Bilkent University (Ankara, Turkey)</a>, in 2018.
+    I am a Fifth Year Ph.D. student in the <a href="https://ece.umd.edu/">Department of Electrical and Computer Engineering</a> at the University of Maryland in College Park, advised by <a href="https://legacydirs.umiacs.umd.edu/~tdumitra/">Prof. Tudor Dumitraș</a>. I received my B.S. in Computer Science(CS) from <a href="w3.cs.bilkent.edu.tr/en/">Bilkent University (Ankara, Turkey)</a>, in 2018. I got my Master of Science (MSc <a href="/assets/pdf_files/msc_diploma_certifiable.pdf">diploma</a>) in Electrical Engineering in 2024  
 </p>
 </td>
 </tr>
