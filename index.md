@@ -15,7 +15,7 @@ layout: home
 <td><!-- <td style="font-family:Lucida Console; color: green; background-color: black;"> -->
 <h3><b>> whoami</b></h3>
 <p >
-    I am a Fifth Year Ph.D. student in the <a href="https://ece.umd.edu/">Department of Electrical and Computer Engineering</a> at the University of Maryland in College Park, advised by <a href="https://legacydirs.umiacs.umd.edu/~tdumitra/">Prof. Tudor Dumitraș</a>. I received my B.S. in Computer Science(CS) from <a href="w3.cs.bilkent.edu.tr/en/">Bilkent University (Ankara, Turkey)</a>, in 2018. I got my Master of Science (MSc <a href="/assets/pdf_files/msc_diploma_certifiable.pdf">diploma</a>) in Electrical Engineering in 2024  
+    I am a Fifth Year Ph.D. candidate in the <a href="https://ece.umd.edu/">Department of Electrical and Computer Engineering</a> at the University of Maryland in College Park, advised by <a href="https://users.umiacs.umd.edu/~tdumitra/">Prof. Tudor Dumitraș</a> and <a href="https://yonghwi-kwon.github.io/">Prof. Yonghwi Kwon</a>. I received my B.S. in Computer Science(CS) from <a href="w3.cs.bilkent.edu.tr/en/">Bilkent University</a>, in 2018. I got my Master of Science (<a href="/assets/pdf_files/msc_diploma_certifiable.pdf">MSc diploma</a>) in Electrical Engineering in 2024  
 </p>
 </td>
 </tr>
@@ -41,6 +41,17 @@ layout: home
 <p >
     I have been awarded the <a href="https://eng.umd.edu/clark-doctoral-fellows">Clark Doctoral Fellowship</a>(2018) which includes and $2000 of travel grant for 4 years, along with guaranteed GRA/GTA for 4 years.
 </p>
+</td>
+</tr>
+
+<tr>
+<!-- <td></td> -->
+<td colspan=2>
+<h3><b>Featured Publications</b></h3>
+<ul>
+    <li>SCAVY: Automating the discovery of Linux kernel privilege escalation primitives - <b>USENIX 2024</b></li>
+    <li>When Malware Changed Its Mind: An Empirical Study of Variable Program Behaviors in the Real World [<a href="https://www.usenix.org/conference/usenixsecurity21">link</a>] - <b>USENIX 2022</b></li>
+</ul>
 </td>
 </tr>
 
