@@ -2,7 +2,7 @@
 <head>
   <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.ico">
 </head>
-{%- include google-analytics.html -%}
+
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
@@ -19,6 +19,7 @@
 
     <!-- include footer.html -->
     {%- include lightbox.html -%}
+    {%- include google-analytics.html -%}
   </body>
 
 </html>
