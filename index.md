@@ -50,7 +50,7 @@ layout: home
 <h3><b>Featured Publications</b></h3>
 <ul>
     <li>SCAVY: Automating the discovery of Linux kernel privilege escalation primitives - <b>USENIX 2024</b></li>
-    <li>When Malware Changed Its Mind: An Empirical Study of Variable Program Behaviors in the Real World [<a href="https://www.usenix.org/conference/usenixsecurity21">link</a>] - <b>USENIX 2022</b></li>
+    <li>When Malware Changed Its Mind: An Empirical Study of Variable Program Behaviors in the Real World [<a href="https://www.usenix.org/conference/usenixsecurity21">link</a>] - <b>USENIX 2021</b></li>
 </ul>
 </td>
 </tr>
