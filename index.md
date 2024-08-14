@@ -47,6 +47,24 @@ layout: home
 <tr>
 <!-- <td></td> -->
 <td colspan=2>
+<p >
+    I have been awarded $1000 for getting first place in CSAW 2021 Advanced Research Competition.
+</p>
+</td>
+</tr>
+
+<tr>
+<!-- <td></td> -->
+<td colspan=2>
+<p >
+    I have been awarded the registration cost for presenting our paper <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/avllazagaj">SCAVY</a> in USENIX Security 2024. VERY EXCITED TO FINALLY PRESENT THERE IN PERSON!!!
+</p>
+</td>
+</tr>
+
+<tr>
+<!-- <td></td> -->
+<td colspan=2>
 <h3><b>Featured Publications</b></h3>
 <ul>
     <li>SCAVY: Automating the discovery of Linux kernel privilege escalation primitives - <b>USENIX 2024</b></li>
