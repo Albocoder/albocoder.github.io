@@ -38,27 +38,15 @@ layout: home
 <tr>
 <!-- <td></td> -->
 <td colspan=2>
-<p >
-    I have been awarded the <a href="https://eng.umd.edu/clark-doctoral-fellows">Clark Doctoral Fellowship</a>(2018) which includes and $2000 of travel grant for 4 years, along with guaranteed GRA/GTA for 4 years.
-</p>
-</td>
-</tr>
+<h3><b>> ./awards</b></h3>
 
-<tr>
-<!-- <td></td> -->
-<td colspan=2>
-<p >
-    I have been awarded $1000 for getting first place in CSAW 2021 Advanced Research Competition.
-</p>
-</td>
-</tr>
+<ul>
+    <li>I have been awarded the <a href="https://eng.umd.edu/clark-doctoral-fellows">Clark Doctoral Fellowship</a>(2018) which includes and $2000 of travel grant for 4 years, along with guaranteed GRA/GTA for 4 years.</li>
 
-<tr>
-<!-- <td></td> -->
-<td colspan=2>
-<p >
-    I have been awarded the registration cost for presenting our paper <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/avllazagaj">SCAVY</a> in USENIX Security 2024. VERY EXCITED TO FINALLY PRESENT THERE IN PERSON!!!
-</p>
+    <li>I have been awarded $1000 for getting first place in CSAW 2021 Advanced Research Competition.</li>
+
+    <li>I have been awarded the full registration cost to present our paper <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/avllazagaj">SCAVY</a> in USENIX Security 2024. VERY EXCITED TO FINALLY PRESENT THERE IN PERSON!!!</li>
+</ul>
 </td>
 </tr>
 
