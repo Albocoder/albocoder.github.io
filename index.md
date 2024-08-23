@@ -13,20 +13,20 @@ layout: home
 <tr>
 <td><img src="/assets/images/profile_pic.jpg" style="margin:0px;border-radius:50%;border: 1px solid black;"/></td>
 <td><!-- <td style="font-family:Lucida Console; color: green; background-color: black;"> -->
-<h3><b>> whoami</b></h3>
+<h3><b style="color: #228700;">> whoami</b></h3>
 <p >
-    I am a Fifth Year Ph.D. candidate in the <a href="https://ece.umd.edu/">Department of Electrical and Computer Engineering</a> at the University of Maryland in College Park, advised by <a href="https://users.umiacs.umd.edu/~tdumitra/">Prof. Tudor Dumitraș</a> and <a href="https://yonghwi-kwon.github.io/">Prof. Yonghwi Kwon</a>. I received my B.S. in Computer Science(CS) from <a href="w3.cs.bilkent.edu.tr/en/">Bilkent University</a>, in 2018. I got my Master of Science (<a href="/assets/pdf_files/msc_diploma_certifiable.pdf">MSc diploma</a>) in Electrical Engineering in 2024  
+    I defended my PhD (August 2024) in the <a href="https://ece.umd.edu/">Department of Electrical and Computer Engineering (ECE)</a> at the University of Maryland in College Park, advised by <a href="https://users.umiacs.umd.edu/~tdumitra/">Prof. Tudor Dumitraș</a> and <a href="https://yonghwi-kwon.github.io/">Prof. Yonghwi Kwon</a>. Earlier that same year I got Masters(<a href="/assets/pdf_files/msc_diploma_certifiable.pdf">MSc diploma</a>) in Electrical Engineering (ECE). I received my B.S. in Computer Science(CS) from <a href="w3.cs.bilkent.edu.tr/en/">Bilkent University</a>, in 2018. 
 </p>
 </td>
 </tr>
 
 <tr>
 <td>
-<h3><b>> ./contact_info</b></h3>
+<h3><b style="color: #228700;">> ./contact_info</b></h3>
 <div style="margin:0px">{%- include home_socials.html -%}</div>
 </td>
 <td><!-- <td style="font-family:Lucida Console; color: green; background-color: black;"> -->
-<h3><b>> ./research_interests</b></h3>
+<h3><b style="color: #228700;">> ./research_interests</b></h3>
 <p >
     My broad research interests cover data-driven <b>malware analysis</b> and <b>automatic exploit generation</b>. I'm currently more focused in automatic exploit generation for the Linux kernel.
     Specifically, in my recent PhD work I have developed a tool (called SCAVY ) to automatically find kernel objects that when overwritten by memory corruptions bugs can reach privilege escalation.
@@ -38,14 +38,14 @@ layout: home
 <tr>
 <!-- <td></td> -->
 <td colspan=2>
-<h3><b>> ./awards</b></h3>
+<h3><b style="color: #228700;">> ./awards</b></h3>
 
 <ul>
     <li>I have been awarded the <a href="https://eng.umd.edu/clark-doctoral-fellows">Clark Doctoral Fellowship</a>(2018) which includes and $2000 of travel grant for 4 years, along with guaranteed GRA/GTA for 4 years.</li>
 
     <li>I have been awarded $1000 for getting first place in CSAW 2021 Advanced Research Competition.</li>
 
-    <li>I have been awarded the full registration cost to present our paper <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/avllazagaj">SCAVY</a> in USENIX Security 2024. VERY EXCITED TO FINALLY PRESENT THERE IN PERSON!!!</li>
+    <li>I have been awarded the full registration cost to present our paper <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/avllazagaj">SCAVY</a> in USENIX Security 2024. Check my takeaways from the conference in my blog post here <a href="">here</a>!</li>
 </ul>
 </td>
 </tr>
@@ -53,7 +53,7 @@ layout: home
 <tr>
 <!-- <td></td> -->
 <td colspan=2>
-<h3><b>Featured Publications</b></h3>
+<h3><b style="color: #228700;">> ./featured_publications</b></h3>
 <ul>
     <li>SCAVY: Automating the discovery of Linux kernel privilege escalation primitives - <b>USENIX 2024</b></li>
     <li>When Malware Changed Its Mind: An Empirical Study of Variable Program Behaviors in the Real World [<a href="https://www.usenix.org/conference/usenixsecurity21">link</a>] - <b>USENIX 2021</b></li>
@@ -64,7 +64,7 @@ layout: home
 <tr>
 <!-- <td></td> -->
 <td colspan=2>
-<h3><b>Talks</b></h3>
+<h3><b style="color: #228700;">> ./talks</b></h3>
 <ul>
     <li>When malware changed it's mind[...] [<a href="https://www.youtube.com/watch?v=ywfoGuM1TwA&t=4s&ab_channel=USENIX">link</a>] - <b>Usenix 2021</b></li>
     <li>When malware changed it's mind[...] [<a href="https://vblocalhost.com/presentations/when-malware-changed-its-mind-an-empirical-study-of-variable-program-behaviours-in-the-real-world/">link</a>] - <b>vblocalhost 2021</b></li>
@@ -75,7 +75,7 @@ layout: home
 <tr>
 <!-- <td></td> -->
 <td colspan=2>
-<h3><b>Professional Services</b></h3>
+<h3><b style="color: #228700;">> ./professional_services</b></h3>
 <ul>
     <li><b>Reviewer</b></li>
     <ul>
